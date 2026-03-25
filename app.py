@@ -104,8 +104,8 @@ with st.sidebar:
     AVAILABLE_MODELS = {
         "Qwen 2.5 Coder (Best for Code)": "qwen2.5-coder:3b",
         "Qwen 2.5 (Fast Analysis)": "qwen2.5:3b",
-        "Qwen 3.5 (Fast Analysis)": "qwen3.5:2b",
-        "Cogito 3b (Fast Analysis)": "cogito:3b"
+        "Qwen 3.5 (Deep Analysis)": "qwen3.5:2b",
+        "Cogito 3b (for Coder)": "cogito:3b"
     }
     
     selected_model_name = st.selectbox(
