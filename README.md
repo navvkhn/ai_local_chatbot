@@ -43,7 +43,7 @@ ollama pull llama3.2:3b
 Clone the repository and install the dependencies:
 
 Bash
-git clone [https://github.com/navvkhn/csv-analysis.git](https://github.com/navvkhn/csv-analysis.git)
+git clone [[https://github.com/navvkhn/ai_local_chatbot/]]([https://github.com/navvkhn/csv-analysis.git)
 cd csv-analysis
 pip install -r requirements.txt
 3. Environment Secrets
