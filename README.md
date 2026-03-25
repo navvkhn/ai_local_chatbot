@@ -56,12 +56,11 @@ Bash
 streamlit run app.py
 📂 Project Structure
 Plaintext
-├── .streamlit/
-│   └── secrets.toml      # API Keys (Git-ignored)
 ├── app.py                # Main Application Logic
 ├── dev_bot_v2.db         # SQLite Database (Local only)
 ├── requirements.txt      # Python Dependencies
 └── README.md             # Project Documentation
+
 🛡️ Privacy & Security
 This project is built with a Privacy-First philosophy:
 
