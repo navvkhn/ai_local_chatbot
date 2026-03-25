@@ -34,7 +34,7 @@ def init_db():
     c.execute('CREATE TABLE IF NOT EXISTS history (thread_id INTEGER, role TEXT, content TEXT)')
     c.execute('SELECT * FROM users')
     if not c.fetchone():
-        c.execute('INSERT INTO users VALUES (?)', (hashlib.sha256("1234".encode()).hexdigest(),))
+        c.execute('INSERT INTO users VALUES (?)', (hashlib.sha256("6767".encode()).hexdigest(),))
     conn.commit()
     conn.close()
 
