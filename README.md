@@ -47,10 +47,7 @@ git clone [[https://github.com/navvkhn/ai_local_chatbot/]]([https://github.com/n
 cd csv-analysis
 pip install -r requirements.txt
 3. Environment Secrets
-Create a .streamlit/secrets.toml file to store your API configuration:
 
-Ini, TOML
-OLLAMA_API_KEY = "your_secure_api_key_here"
 4. Launch
 Bash
 streamlit run app.py
@@ -74,6 +71,3 @@ Encrypted Tunneling: When accessed remotely, all traffic is encrypted via Cloudf
 Contributions are welcome! If you have a feature request or a bug report, please open an issue or submit a pull request.
 
 Developed with ❤️ by Naved
-```bash
-ollama pull qwen2.5-coder:3b
-ollama pull llama3.2:3b
