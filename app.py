@@ -103,9 +103,8 @@ with st.sidebar:
     # --- MODEL SELECTION (HARDCODED) ---
     AVAILABLE_MODELS = {
         "Qwen 2.5 Coder (Best for Code)": "qwen2.5-coder:3b",
-        "Qwen 3.5 (Fast Analysis)": "qwen3.5:1.8b",
-        "Llama 3.2 (Creative/General)": "llama3.2:3b",
-        "DeepSeek Coder (Advanced)": "deepseek-coder:6.7b"
+        "Qwen 2.5 (Fast Analysis)": "qwen2.5:3b",
+        "Qwen 3.5 (Fast Analysis)": "qwen3.5:2b",
     }
     
     selected_model_name = st.selectbox(
