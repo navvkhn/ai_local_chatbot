@@ -85,7 +85,7 @@ if not st.session_state.authenticated:
     with col:
         st.markdown("<h2 style='text-align: center;'>Naved GPT Pro</h2>", unsafe_allow_html=True)
         pin = st.text_input("Developer PIN", type="password")
-        if st.button("Unlock Projects", use_container_width=True):
+        if st.button("Unlock Chats", use_container_width=True):
             db_pin = sqlite3.connect(DB_PATH).execute('SELECT pin_hash FROM users').fetchone()[0]
             if hashlib.sha256(pin.encode()).hexdigest() == db_pin:
                 st.session_state.authenticated = True
@@ -98,7 +98,7 @@ if not st.session_state.authenticated:
 # 4. SIDEBAR (MODEL SELECTOR & HISTORY)
 # =====================================================
 with st.sidebar:
-    st.title("⚙️ Engine Room")
+    st.title("⚙️ Ghar ka GPT")
     
     # --- MODEL SELECTION (HARDCODED) ---
     AVAILABLE_MODELS = {
@@ -117,12 +117,12 @@ with st.sidebar:
     
     st.divider()
     
-    if st.button("➕ Start New Project", use_container_width=True):
+    if st.button("➕ Start New Chat", use_container_width=True):
         st.session_state.current_thread_id = None
         st.rerun()
     
     st.divider()
-    st.write("**Project History**")
+    st.write("**Chat History**")
     
     for tid, title in get_all_threads():
         col_name, col_del = st.columns([4, 1])
@@ -131,7 +131,7 @@ with st.sidebar:
                 st.session_state.current_thread_id = tid
                 st.rerun()
         with col_del:
-            if st.button("🗑️", key=f"del_{tid}", help="Delete Project"):
+            if st.button("🗑️", key=f"del_{tid}", help="Delete Chat"):
                 delete_thread(tid)
                 if st.session_state.get("current_thread_id") == tid:
                     st.session_state.current_thread_id = None
