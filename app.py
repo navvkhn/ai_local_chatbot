@@ -9,7 +9,7 @@ from datetime import datetime
 # =====================================================
 # 1. PAGE CONFIG & STYLING
 # =====================================================
-st.set_page_config(page_title="Naved GPT Pro", layout="wide", page_icon="🚀")
+st.set_page_config(page_title="Ghar ka GPT Pro by Naved", layout="wide", page_icon="🚀")
 
 st.markdown("""
 <style>
